@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Kinetik full logo with icon and text -->
+  <g fill="#8B1E3F">
+    <!-- K Icon Mark -->
+    <g transform="translate(0, 5) scale(0.5)">
+      <polygon points="15,10 30,10 30,90 15,90"/>
+      <polygon points="30,45 85,10 85,30 45,55"/>
+      <polygon points="30,55 45,55 85,90 65,90"/>
+    </g>
+    
+    <!-- "kinetik" text -->
+    <text x="55" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-1">kinetik</text>
+    
+    <!-- "INSIGHTS IN MOTION" tagline -->
+    <text x="55" y="50" font-family="Arial, sans-serif" font-size="9" font-weight="400" letter-spacing="2">INSIGHTS IN MOTION</text>
+  </g>
+</svg>
+

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Geometric K mark for Kinetik -->
+  <g fill="#8B1E3F">
+    <!-- Left vertical bar -->
+    <polygon points="15,10 30,10 30,90 15,90"/>
+    <!-- Upper diagonal -->
+    <polygon points="30,45 85,10 85,30 45,55"/>
+    <!-- Lower diagonal -->
+    <polygon points="30,55 45,55 85,90 65,90"/>
+  </g>
+</svg>
+

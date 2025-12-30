@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { Menu, X } from "lucide-react";
@@ -90,10 +91,17 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-soft">
-              K
+            <Image
+              src="/logo.svg"
+              alt="Kinetik"
+              width={36}
+              height={36}
+              className="h-9 w-9"
+            />
+            <div className="flex flex-col">
+              <span className="text-sm font-bold tracking-tight text-[#8B1E3F]">kinetik</span>
+              <span className="text-[8px] font-medium tracking-widest text-[#8B1E3F]/80 uppercase hidden sm:block">Insights in Motion</span>
             </div>
-            <span className="text-sm font-semibold tracking-tight">Kinetik</span>
           </Link>
         </div>
 

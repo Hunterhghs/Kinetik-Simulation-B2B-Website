@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/container";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
@@ -9,14 +10,18 @@ export function SiteFooter() {
       <Container className="py-12">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-soft">
-                K
-              </div>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.svg"
+                alt="Kinetik"
+                width={40}
+                height={40}
+                className="h-10 w-10"
+              />
               <div>
-                <div className="text-sm font-semibold">Kinetik</div>
-                <div className="text-xs text-muted-foreground">
-                  Signal intelligence for RevOps workflows
+                <div className="text-sm font-bold text-[#8B1E3F]">kinetik</div>
+                <div className="text-[8px] font-medium tracking-widest text-[#8B1E3F]/80 uppercase">
+                  Insights in Motion
                 </div>
               </div>
             </div>
