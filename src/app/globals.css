@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,6 +88,7 @@ html {
 
 body {
   @apply bg-background text-foreground antialiased;
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
 }
 
@@ -101,25 +104,17 @@ body {
 
 /* ================================
    TYPOGRAPHY
-   Using DM Sans for headings, Inter for body
+   Using DM Sans for headings, JetBrains Mono for code
    ================================ */
 
-@layer base {
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap');
-  
-  body {
-    font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', system-ui, sans-serif;
-    letter-spacing: -0.025em;
-    font-weight: 600;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
 
-  code, pre, kbd {
-    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', Consolas, monospace;
-  }
+code, pre, kbd {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', Consolas, monospace;
 }
 
 /* ================================

@@ -21,7 +21,7 @@ export function AccordionItem({
   return (
     <details
       className="group rounded-lg border border-border bg-card p-4 shadow-soft"
-      defaultOpen={defaultOpen}
+      open={defaultOpen}
     >
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-medium">
         <span>{title}</span>
