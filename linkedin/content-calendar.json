@@ -1,0 +1,392 @@
+[
+  {
+    "date": "2026-01-05",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-06",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-01-07",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-01-08",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-01-09",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  },
+  {
+    "date": "2026-01-10",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-11",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-01-12",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-01-13",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-01-14",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  },
+  {
+    "date": "2026-01-15",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-16",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-01-17",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-01-18",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-01-19",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  },
+  {
+    "date": "2026-01-20",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-21",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-01-22",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-01-23",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-01-24",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  },
+  {
+    "date": "2026-01-25",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-26",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-01-27",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-01-28",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-01-29",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  },
+  {
+    "date": "2026-01-30",
+    "pillar": "Signal Brief",
+    "post_type": "carousel",
+    "hook": "A signal changed \u2014 here\u2019s the action it should trigger.",
+    "outline": [
+      "What changed (the signal)",
+      "Why it matters now (verification + decay)",
+      "Recommended action (route/alert/playbook)",
+      "How to measure (lift + false positives)"
+    ],
+    "CTA": "Want a governed signal brief template? DM us."
+  },
+  {
+    "date": "2026-01-31",
+    "pillar": "RevOps Play",
+    "post_type": "single",
+    "hook": "A workflow you can govern and measure in under 2 weeks.",
+    "outline": [
+      "Workflow definition (trigger \u2192 action \u2192 outcome)",
+      "Governance controls (thresholds, exceptions, versioning)",
+      "Implementation steps (integrations + rules)",
+      "Success metrics and review cadence"
+    ],
+    "CTA": "Book a demo to map your first workflow."
+  },
+  {
+    "date": "2026-02-01",
+    "pillar": "Benchmark",
+    "post_type": "short-video",
+    "hook": "Stop measuring activity. Measure workflow lift.",
+    "outline": [
+      "Define the metric and denominator",
+      "Baseline vs intervention design",
+      "Add reason codes to explain lift",
+      "Track noise and false positives"
+    ],
+    "CTA": "Download the benchmark template from our site."
+  },
+  {
+    "date": "2026-02-02",
+    "pillar": "Product in Practice",
+    "post_type": "text",
+    "hook": "What explainability looks like in a real signal-driven workflow.",
+    "outline": [
+      "Show the input signals",
+      "Show the reason codes",
+      "Show the action (routing/alert)",
+      "Show the measurement output"
+    ],
+    "CTA": "See the tour: kinetikb2b.ai/demo#tour"
+  },
+  {
+    "date": "2026-02-03",
+    "pillar": "Operator POV",
+    "post_type": "carousel",
+    "hook": "What I learned building governance into GTM automation.",
+    "outline": [
+      "The real operational constraint (data, governance, adoption)",
+      "A decision we made to reduce risk",
+      "The tradeoff",
+      "How to apply it in your org"
+    ],
+    "CTA": "Follow for weekly operator playbooks."
+  }
+]

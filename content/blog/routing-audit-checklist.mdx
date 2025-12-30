@@ -1,0 +1,44 @@
+---
+title: "Routing rules: what to audit every quarter"
+description: "A checklist for RevOps teams to keep routing definitions clean, explainable, and aligned to outcomes."
+date: "2025-10-30"
+author: "Kinetik Team"
+tags: ["RevOps", "Routing", "SLA"]
+---
+
+Routing rules drift.
+
+As teams change territories, segments, and SLAs, routing logic becomes:
+- inconsistent,
+- hard to explain,
+- and fragile.
+
+Here’s a quarterly audit checklist.
+
+## 1) Definitions
+- Are lead/account definitions still correct?
+- Do stage definitions match actual behavior?
+- Are exceptions documented?
+
+## 2) Ownership and governance
+- Who can change routing?
+- Are changes versioned?
+- Can you answer: *why did this route here?*
+
+## 3) SLA outcomes
+Look beyond “time to first touch.”
+
+Track:
+- accepted vs rejected routed items,
+- SLA compliance by segment,
+- conversion from routed items to meetings / next stage.
+
+## 4) Signal quality
+If routing is triggered by signals, verify:
+- dedupe rules,
+- decay,
+- identity matching,
+- noise sources.
+
+## Summary
+A routing system is only as good as its governance. Treat it like production infrastructure.

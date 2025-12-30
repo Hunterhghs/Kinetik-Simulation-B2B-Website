@@ -1,0 +1,55 @@
+---
+title: "Benchmark template: signal-to-meeting conversion"
+description: "A simple measurement template to quantify whether signal-driven workflows increase meetings and pipeline progression."
+date: "2025-09-20"
+author: "Kinetik Team"
+tags: ["Benchmarks", "Measurement", "RevOps"]
+---
+
+This is a **template**, not a claim.
+
+Use it to benchmark whether signal-driven workflows (routing, alerting, playbooks) improved outcomes.
+
+## Define the workflow
+Example workflow:
+- signal detected → routed to owner → SLA clock starts → outcome recorded
+
+## Required fields
+Track these per routed item:
+- account_id
+- signal_type(s)
+- timestamp_detected
+- timestamp_routed
+- owner_assigned
+- SLA_target
+- outcome (accepted, rejected, no action)
+- meeting_booked (yes/no)
+- meeting_date (if yes)
+- next_stage_reached (yes/no)
+- reason_codes (why it routed)
+
+## Core metrics
+### 1) Signal-to-meeting conversion
+`meetings_booked / routed_items`
+
+### 2) Acceptance rate
+`accepted / routed_items`
+
+### 3) SLA compliance
+`SLA_met / routed_items`
+
+### 4) False positive rate (reviewed)
+`reviewed_false_positive / reviewed_items`
+
+## Comparison design
+Compare:
+- a baseline period (before workflow)
+- vs. an intervention period (after workflow)
+
+Keep:
+- segment definitions consistent
+- routing rules versioned
+- noise filters documented
+
+## Notes
+If you can’t explain how you computed lift, enterprise stakeholders won’t trust it.

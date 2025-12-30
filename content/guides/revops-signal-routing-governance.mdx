@@ -1,0 +1,58 @@
+---
+title: "RevOps Playbook: Signal-based routing governance"
+description: "A step-by-step approach to routing that enterprise teams can measure, audit, and iterate on safely."
+date: "2025-12-05"
+author: "Kinetik Team"
+tags: ["RevOps", "Routing", "Governance"]
+---
+
+This playbook helps you build routing that is **governed** and **measurable**, especially when routing is driven by signals (intent, engagement, product usage, etc.).
+
+## Step 1: Choose a single workflow
+Start with one narrow workflow:
+- inbound signal → assignment → SLA → meeting conversion
+
+Write down:
+- what counts as a qualifying signal,
+- who owns the definition,
+- how you’ll measure lift.
+
+## Step 2: Define “ready” in operator language
+Avoid fuzzy definitions.
+
+Use explicit rules:
+- minimum signal count,
+- time windows,
+- verification requirements,
+- exclusions (noise sources).
+
+## Step 3: Add an exception path
+Not every signal should route.
+
+Create an exception review queue for:
+- conflicts (multiple owners),
+- mismatched identity resolution,
+- borderline scores.
+
+## Step 4: Version changes
+Treat routing like code:
+- version the definition,
+- record why changes were made,
+- review on a fixed cadence.
+
+## Step 5: Measure workflow lift
+A minimal measurement set:
+- acceptance rate of routed items
+- SLA compliance
+- meeting conversion rate
+- false positive rate (manual review outcomes)
+
+## Step 6: Expand carefully
+Once trust is established:
+- add new signal types,
+- lower thresholds gradually,
+- monitor drift.
+
+---
+
+If you can’t explain why something routed, you can’t govern it.

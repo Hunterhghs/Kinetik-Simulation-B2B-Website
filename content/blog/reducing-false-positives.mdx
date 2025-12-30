@@ -1,0 +1,47 @@
+---
+title: "Reducing false positives in signal intelligence"
+description: "How to keep intent and engagement signals useful with verification, decay, and operator-controlled thresholds."
+date: "2025-11-22"
+author: "Kinetik Team"
+tags: ["Signals", "Governance", "Scoring"]
+---
+
+False positives are the fastest way to lose stakeholder trust.
+
+If a seller gets five “hot account” alerts that go nowhere, the sixth one gets ignored — even if it’s real.
+
+## Why false positives happen
+Common causes:
+- duplicated events from multiple sources,
+- “stale” engagement treated as current,
+- identity mismatches (wrong domain/account),
+- activity that looks meaningful but isn’t (bot traffic, accidental clicks).
+
+## Controls that work in enterprise environments
+
+### Verification rules
+Use simple, explicit checks:
+- account domain must match the source event domain,
+- a minimum number of distinct signals must be present,
+- exclude known noisy sources.
+
+### Time decay
+Signals should lose weight over time.
+
+Decay keeps teams focused on **change** rather than historical accumulation.
+
+### Operator-controlled thresholds
+Avoid auto-tuning that can’t be explained.
+
+Let RevOps define:
+- what counts as “ready,”
+- what triggers routing,
+- and what creates an exception review instead of an alert.
+
+## A practical recommendation
+Start conservative:
+- route fewer, higher-confidence signals,
+- measure lift,
+- expand once trust is established.
+
+This protects adoption and makes scaling easier.
