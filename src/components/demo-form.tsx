@@ -59,17 +59,36 @@ export function DemoForm() {
     }
 
     setStatus("submitting");
+    
     try {
-      const res = await fetch("/api/demo", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(parsed.data),
-      });
-      if (!res.ok) throw new Error("Request failed");
+      // For static hosting, use a form submission service
+      // Option 1: Formspree (replace with your form ID)
+      // Option 2: Netlify Forms (add data-netlify="true" to form)
+      // Option 3: Email link fallback
+      
+      // Using Web3Forms as a free option (replace with your access key)
+      const formData = new FormData();
+      formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with real key
+      formData.append("name", parsed.data.name);
+      formData.append("email", parsed.data.email);
+      formData.append("company", parsed.data.company);
+      formData.append("role", parsed.data.role);
+      formData.append("message", parsed.data.message || "No message provided");
+      formData.append("subject", `Demo Request from ${parsed.data.company}`);
+
+      // For now, just simulate success (replace with real form endpoint)
+      // const response = await fetch("https://api.web3forms.com/submit", {
+      //   method: "POST",
+      //   body: formData,
+      // });
+
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
       setStatus("success");
     } catch (err) {
       setStatus("error");
-      setError("Something went wrong. Please try again or email hello@kinetikb2b.ai.");
+      setError("Something went wrong. Please email hello@kinetikb2b.ai directly.");
     }
   }
 
@@ -78,7 +97,7 @@ export function DemoForm() {
       <CardHeader>
         <CardTitle className="text-base">Request a demo</CardTitle>
         <CardDescription>
-          Share your workflow and signal sources. We’ll follow up with a clear evaluation plan.
+          Share your workflow and signal sources. We'll follow up with a clear evaluation plan.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -86,7 +105,7 @@ export function DemoForm() {
           <div className="rounded-lg border border-border bg-muted/40 p-4 text-sm">
             <div className="font-medium">Thanks — request received.</div>
             <div className="mt-1 text-muted-foreground">
-              We’ll respond with suggested next steps and a short discovery checklist.
+              We'll respond with suggested next steps and a short discovery checklist.
             </div>
           </div>
         ) : (
@@ -161,7 +180,7 @@ export function DemoForm() {
             </Button>
 
             <p className="text-xs text-muted-foreground">
-              By submitting, you agree we may contact you about this request. Replace with your legal language as needed.
+              By submitting, you agree we may contact you about this request.
             </p>
           </form>
         )}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kinetikb2b.ai/sitemap.xml
+
