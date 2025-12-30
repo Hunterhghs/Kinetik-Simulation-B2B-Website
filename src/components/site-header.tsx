@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -38,7 +38,7 @@ const resources: NavItem[] = [
 ];
 
 const company: NavItem[] = [
-  { label: "About", href: "/company/about", description: "Why we’re building Kinetik." },
+  { label: "About", href: "/company/about", description: "Why we're building Kinetik." },
   { label: "Contact", href: "/company/contact", description: "Talk to the team." },
   { label: "Trust", href: "/trust/security", description: "Security, privacy, and compliance posture." },
 ];
@@ -50,40 +50,77 @@ function DesktopDropdown({
   label: string;
   items: NavItem[];
 }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, 150); // Small delay for better UX
+  };
+
   return (
-    <details className="group relative">
-      <summary className="flex list-none cursor-pointer items-center gap-1 rounded-md px-2 py-1 text-sm font-medium text-foreground hover:bg-muted/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        type="button"
+        className="flex items-center gap-1 rounded-md px-2 py-1 text-sm font-medium text-foreground hover:bg-muted/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        aria-expanded={isOpen}
+        aria-haspopup="true"
+      >
         {label}
-        <span className="text-muted-foreground transition-transform group-open:rotate-180">▾</span>
-      </summary>
-      <div className="absolute left-0 top-full z-50 mt-2 w-[320px] overflow-hidden rounded-xl border border-border bg-card shadow-soft">
-        <div className="grid gap-1 p-2">
-          {items.map((it) => (
-            <Link
-              key={it.href}
-              href={it.href}
-              className="rounded-lg px-3 py-2 hover:bg-muted/60"
-            >
-              <div className="text-sm font-medium">{it.label}</div>
-              {it.description ? (
-                <div className="mt-0.5 text-xs text-muted-foreground">
-                  {it.description}
-                </div>
-              ) : null}
-            </Link>
-          ))}
+        <ChevronDown 
+          className={cn(
+            "h-3.5 w-3.5 text-muted-foreground transition-transform duration-200",
+            isOpen && "rotate-180"
+          )} 
+        />
+      </button>
+      
+      {isOpen && (
+        <div className="absolute left-0 top-full z-50 pt-2">
+          <div className="w-[320px] overflow-hidden rounded-xl border border-border bg-card shadow-lg">
+            <div className="grid gap-1 p-2">
+              {items.map((it) => (
+                <Link
+                  key={it.href}
+                  href={it.href}
+                  className="rounded-lg px-3 py-2 hover:bg-muted/60 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div className="text-sm font-medium">{it.label}</div>
+                  {it.description ? (
+                    <div className="mt-0.5 text-xs text-muted-foreground">
+                      {it.description}
+                    </div>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </details>
+      )}
+    </div>
   );
 }
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const [open, setOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
   React.useEffect(() => {
-    setOpen(false);
+    setMobileOpen(false);
   }, [pathname]);
 
   return (
@@ -110,7 +147,7 @@ export function SiteHeader() {
           <Link
             href="/product"
             className={cn(
-              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60",
+              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60 transition-colors",
               pathname === "/product" && "bg-muted/60"
             )}
           >
@@ -122,7 +159,7 @@ export function SiteHeader() {
           <Link
             href="/integrations"
             className={cn(
-              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60",
+              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60 transition-colors",
               pathname.startsWith("/integrations") && "bg-muted/60"
             )}
           >
@@ -132,7 +169,7 @@ export function SiteHeader() {
           <Link
             href="/customers"
             className={cn(
-              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60",
+              "rounded-md px-2 py-1 text-sm font-medium hover:bg-muted/60 transition-colors",
               pathname.startsWith("/customers") && "bg-muted/60"
             )}
           >
@@ -157,15 +194,15 @@ export function SiteHeader() {
             type="button"
             variant="ghost"
             className="h-10 w-10 p-0"
-            aria-label={open ? "Close menu" : "Open menu"}
-            onClick={() => setOpen((v) => !v)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            onClick={() => setMobileOpen((v) => !v)}
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
 
-      {open ? (
+      {mobileOpen ? (
         <div className="md:hidden">
           <Separator />
           <div className="container py-4">
